@@ -100,7 +100,7 @@ function Init(final)
     if(emojisModule == null) { if(final) Utils.Error("emojisModule not found."); return 0; }
 
     let messageEmojiParserModule = findModuleByUniqueProperties([ 'parse', 'parsePreprocessor', 'unparse' ]);
-    if(messageEmojiParserModule == null) { if(final) Utils.Error("messageEmojiParserModule not found."); return 0; }
+    if(messageEmojiParserModule == null) { if(final) Utils.Error("messageEmojiParserModule not found."); return 1; }
 
     let emojiPickerModule = findModuleByUniqueProperties([ 'useEmojiSelectHandler' ]);
     if(emojiPickerModule == null) { if(final) Utils.Error("emojiPickerModule not found."); return 0; }
